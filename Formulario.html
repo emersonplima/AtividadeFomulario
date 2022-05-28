@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Padrões Web</title>
+    <style>
+        fieldset
+        {
+            width: 35%;
+        }
+    </style>
+</head>
+<a href="Index.html">
+    Voltar index
+</a>
+<body>
+    <h1>Formulário</h1>
+    <br>
+    <form action="" method="post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="id_nome">
+            Nome:
+        </label>
+        <input type="text" name = "nome" id = id_nome
+        placeholder="Digite seu nome"
+        value="">
+        <br>
+        <label for="id_data_nascimento">
+            Data de Nascimento:
+        </label>
+        <input type="date" name="data" id = id_data_nascimento
+        placeholder="dd/mm/aaaa"
+        value="23/11/1982">
+        <br>
+        <label for="id_email">
+            E-mail
+        </label>
+        <input type="text" name="email" id= id_email
+        placeholder="email@email.com">
+        <br>
+        <label for="id_telefone">
+            Telefone
+        </label>
+        <input type="number" name="telefone" id = id_telefone
+        placeholder="9 9999-9999">
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        <label for="id_curso">
+            Curso:
+        </label>
+        <select name="id_curso" id="id_curso">
+        <option value="ADS" selected>ADS</option>
+        <option value="GTI">GTI</option>
+        <option value="TBD">TBD</option>
+        <option value="TSI">TSI</option>
+        </select>
+        <br>
+        <label for="Semestre">
+            Semestre
+        </label>
+        <input type="radio" 
+        name="Semestre"
+        id = "id_Sem1"
+        value="Sem1" required>
+        <label for="id_Sem1">
+            1º
+        </label>
+        <input type="radio" 
+        name="Semestre"
+        id = "id_Sem2"
+        value="Sem2" required>
+        <label for="id_Sem2">
+            2º
+        </label>        
+        <input type="radio" 
+        name="Semestre"
+        id = "id_Sem3"
+        value="Sem2" required>
+        <label for="id_Sem3">
+            3º
+        </label>
+        <input type="radio" 
+        name="Semestre"
+        id = "id_Sem4"
+        value="Sem4" required>
+        <label for="id_Sem4">
+            4º
+        </label>
+        <input type="radio" 
+        name="Semestre"
+        id = "id_Sem5"
+        value="Sem2" required>
+        <label for="id_Sem5">
+            5º
+        </label>
+    </fieldset> 
+    <br>
+    <fieldset>
+        <label for="id_trabalha">
+            Trabalha?
+        </label>
+        <input type="checkbox" 
+        name="Trabalha" 
+        id="id_trabalha">
+        <br>
+        <label for="id_Local_Trabalho">
+            Local Trabalho:
+        </label>
+        <input type="text" name = "localtrabalho" id = id_local_trabalho
+        placeholder="Digite local"
+        value="">
+        <br>
+        <label for="id_experiencia">
+            Descreva sua experiência
+        </label>
+        <br>
+        <textarea name="id_experiencia" id="id_experiencia" rows="5" cols="60" ></textarea>       
+    </fieldset>   
+        <button name="button"> Gravar </button>
+        <button name="button"> Limpar </button>
+    </form>
+</body>
+</html>
